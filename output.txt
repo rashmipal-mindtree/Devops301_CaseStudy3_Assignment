@@ -636,3 +636,11 @@ hudson.AbortException: Couldn't find Artifactory server with ID: 1
 2020-12-11 19:42:41.788+0000 [id=680]	INFO	o.j.h.util.JenkinsBuildInfoLog#info: Build successfully deployed. Browse it in Artifactory under http://pxmee58901dns.eastus2.cloudapp.azure.com/artifactory/webapp/builds/petclinic/7
 2020-12-11 19:42:44.202+0000 [id=743]	WARNING	o.j.p.w.cps.CpsThreadGroup#run: Stale closures in CpsFlowExecution[Owner[DevOps_CaseStudy3_Assignment/7:DevOps_CaseStudy3_Assignment #7]]: [21]
 2020-12-11 19:42:44.202+0000 [id=681]	INFO	o.j.p.workflow.job.WorkflowRun#finish: DevOps_CaseStudy3_Assignment #7 completed: SUCCESS
+2020-12-11 20:19:09.737+0000 [id=939]	INFO	o.j.h.util.JenkinsBuildInfoLog#info: [consumer_0] Deploying artifact: http://pxmee58901dns.eastus2.cloudapp.azure.com/artifactory/generic-snapshot/petclinic.war
+2020-12-11 20:19:10.694+0000 [id=870]	INFO	o.j.h.util.JenkinsBuildInfoLog#info: Deploying build descriptor to: http://pxmee58901dns.eastus2.cloudapp.azure.com/artifactory/api/build
+2020-12-11 20:19:10.718+0000 [id=870]	INFO	o.j.h.util.JenkinsBuildInfoLog#info: Build successfully deployed. Browse it in Artifactory under http://pxmee58901dns.eastus2.cloudapp.azure.com/artifactory/webapp/builds/petclinic/7
+2020-12-11 20:19:10.923+0000 [id=872]	INFO	h.p.sonar.SonarBuildWrapper#setUp: Injecting SonarQube environment variables using the configuration: SonarQube
+2020-12-11 20:19:10.967+0000 [id=872]	INFO	h.p.sonar.SonarBuildWrapper#createLoggerDecorator: Masking SonarQube passwords
+2020-12-11 20:25:23.330+0000 [id=1036]	INFO	o.j.p.workflow.job.WorkflowRun#finish: DevOps_CaseStudy3_Assignment #8 completed: SUCCESS
+2020-12-11 20:28:47.403+0000 [id=1043]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started Periodic background build discarder
+2020-12-11 20:28:47.405+0000 [id=1043]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished Periodic background build discarder. 1 ms
