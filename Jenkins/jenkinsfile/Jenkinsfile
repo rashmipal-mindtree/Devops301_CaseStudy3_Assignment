@@ -89,5 +89,6 @@ rtPublishBuildInfo (
  
  } catch (err) {
      emailext body: "${err}", subject: 'Pipeline Job Failed!!', to: 'pal.rashmi@gmail.com'
-	 
 }
+}
+
