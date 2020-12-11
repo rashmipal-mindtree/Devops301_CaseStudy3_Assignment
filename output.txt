@@ -35,3 +35,57 @@ webroot: $user.home/.jenkins
 2020-12-11 18:54:00.542+0000 [id=108]	INFO	h.triggers.SCMTrigger$Runner#run: SCM changes detected in DevOps_CaseStudy3_Assignment. Triggering  #1
 2020-12-11 18:54:07.790+0000 [id=110]	INFO	o.j.p.workflow.job.WorkflowRun#finish: DevOps_CaseStudy3_Assignment #1 completed: FAILURE
 2020-12-11 18:54:43.881+0000 [id=136]	INFO	o.j.p.workflow.job.WorkflowRun#finish: DevOps_CaseStudy3_Assignment #2 completed: FAILURE
+2020-12-11 19:01:27.192+0000 [id=198]	WARNING	o.j.p.w.cps.CpsStepContext#completed: already completed CpsStepContext[40:rtUpload]:Owner[DevOps_CaseStudy3_Assignment/3:DevOps_CaseStudy3_Assignment #3]
+java.lang.IllegalStateException: delivered here
+	at org.jenkinsci.plugins.workflow.cps.CpsStepContext.completed(CpsStepContext.java:339)
+	at org.jenkinsci.plugins.workflow.cps.CpsStepContext.onFailure(CpsStepContext.java:314)
+	at org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution.lambda$start$0(SynchronousNonBlockingStepExecution.java:52)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-12-11 19:01:27.193+0000 [id=198]	INFO	o.j.p.w.cps.CpsStepContext#completed: new failure
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at org.jfrog.hudson.pipeline.common.executors.GetArtifactoryServerExecutor.execute(GetArtifactoryServerExecutor.java:55)
+	at org.jfrog.hudson.pipeline.declarative.utils.DeclarativePipelineUtils.getArtifactoryServer(DeclarativePipelineUtils.java:83)
+	at org.jfrog.hudson.pipeline.declarative.steps.generic.GenericStep$Execution.setGenericParameters(GenericStep.java:95)
+	at org.jfrog.hudson.pipeline.declarative.steps.generic.UploadStep$Execution.run(UploadStep.java:33)
+	at org.jfrog.hudson.pipeline.declarative.steps.generic.UploadStep$Execution.run(UploadStep.java:24)
+	at org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution.lambda$start$0(SynchronousNonBlockingStepExecution.java:47)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-12-11 19:01:27.193+0000 [id=198]	INFO	o.j.p.w.cps.CpsStepContext#completed: previously delivered here
+java.lang.Throwable
+	at org.jenkinsci.plugins.workflow.cps.CpsStepContext.completed(CpsStepContext.java:327)
+	at org.jenkinsci.plugins.workflow.cps.CpsStepContext.onFailure(CpsStepContext.java:314)
+	at org.jfrog.hudson.pipeline.common.executors.GetArtifactoryServerExecutor.execute(GetArtifactoryServerExecutor.java:50)
+	at org.jfrog.hudson.pipeline.declarative.utils.DeclarativePipelineUtils.getArtifactoryServer(DeclarativePipelineUtils.java:83)
+	at org.jfrog.hudson.pipeline.declarative.steps.generic.GenericStep$Execution.setGenericParameters(GenericStep.java:95)
+	at org.jfrog.hudson.pipeline.declarative.steps.generic.UploadStep$Execution.run(UploadStep.java:33)
+	at org.jfrog.hudson.pipeline.declarative.steps.generic.UploadStep$Execution.run(UploadStep.java:24)
+	at org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution.lambda$start$0(SynchronousNonBlockingStepExecution.java:47)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-12-11 19:01:27.193+0000 [id=198]	INFO	o.j.p.w.cps.CpsStepContext#completed: earlier failure
+hudson.AbortException: Couldn't find Artifactory server with ID: 1
+	at org.jfrog.hudson.pipeline.common.executors.GetArtifactoryServerExecutor.execute(GetArtifactoryServerExecutor.java:50)
+	at org.jfrog.hudson.pipeline.declarative.utils.DeclarativePipelineUtils.getArtifactoryServer(DeclarativePipelineUtils.java:83)
+	at org.jfrog.hudson.pipeline.declarative.steps.generic.GenericStep$Execution.setGenericParameters(GenericStep.java:95)
+	at org.jfrog.hudson.pipeline.declarative.steps.generic.UploadStep$Execution.run(UploadStep.java:33)
+	at org.jfrog.hudson.pipeline.declarative.steps.generic.UploadStep$Execution.run(UploadStep.java:24)
+	at org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution.lambda$start$0(SynchronousNonBlockingStepExecution.java:47)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-12-11 19:01:29.228+0000 [id=264]	INFO	o.j.p.workflow.job.WorkflowRun#finish: DevOps_CaseStudy3_Assignment #3 completed: SUCCESS

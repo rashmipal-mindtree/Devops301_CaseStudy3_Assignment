@@ -33,7 +33,7 @@ node {
 
  stage('Archive into Artifactory') {
 rtUpload (
-    serverId: '1',
+    serverId: '01',
     spec: '''{
           "files": [
             {
