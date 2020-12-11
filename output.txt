@@ -631,3 +631,8 @@ hudson.AbortException: Couldn't find Artifactory server with ID: 1
 2020-12-11 19:32:23.762+0000 [id=549]	INFO	o.j.h.util.JenkinsBuildInfoLog#info: Deploying build descriptor to: http://pxmee58901dns.eastus2.cloudapp.azure.com/artifactory/api/build
 2020-12-11 19:32:23.924+0000 [id=549]	INFO	o.j.h.util.JenkinsBuildInfoLog#info: Build successfully deployed. Browse it in Artifactory under http://pxmee58901dns.eastus2.cloudapp.azure.com/artifactory/webapp/builds/petclinic/1
 2020-12-11 19:32:26.377+0000 [id=550]	INFO	o.j.p.workflow.job.WorkflowRun#finish: DevOps_CaseStudy3_Assignment #6 completed: SUCCESS
+2020-12-11 19:42:40.746+0000 [id=751]	INFO	o.j.h.util.JenkinsBuildInfoLog#info: [consumer_0] Deploying artifact: http://pxmee58901dns.eastus2.cloudapp.azure.com/artifactory/generic-snapshot/petclinic.war
+2020-12-11 19:42:41.739+0000 [id=680]	INFO	o.j.h.util.JenkinsBuildInfoLog#info: Deploying build descriptor to: http://pxmee58901dns.eastus2.cloudapp.azure.com/artifactory/api/build
+2020-12-11 19:42:41.788+0000 [id=680]	INFO	o.j.h.util.JenkinsBuildInfoLog#info: Build successfully deployed. Browse it in Artifactory under http://pxmee58901dns.eastus2.cloudapp.azure.com/artifactory/webapp/builds/petclinic/7
+2020-12-11 19:42:44.202+0000 [id=743]	WARNING	o.j.p.w.cps.CpsThreadGroup#run: Stale closures in CpsFlowExecution[Owner[DevOps_CaseStudy3_Assignment/7:DevOps_CaseStudy3_Assignment #7]]: [21]
+2020-12-11 19:42:44.202+0000 [id=681]	INFO	o.j.p.workflow.job.WorkflowRun#finish: DevOps_CaseStudy3_Assignment #7 completed: SUCCESS
