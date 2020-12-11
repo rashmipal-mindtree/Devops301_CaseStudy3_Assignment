@@ -49,7 +49,7 @@ rtUpload (
     // If not set, the files will be associated with the default build name and build number (i.e the
     // the Jenkins job name and number).
     buildName: 'petclinic',
-    buildNumber: '1'
+    buildNumber: '7'
 )
 rtPublishBuildInfo (
     serverId: '1',
@@ -60,7 +60,7 @@ rtPublishBuildInfo (
     // and rtIpload) have the same buildName and buildNumber set. If they don't, then these steps will not
     // be included in the build-info.
      buildName: 'petclinic',
-    buildNumber: '1'
+    buildNumber: '7'
 )
 }
 

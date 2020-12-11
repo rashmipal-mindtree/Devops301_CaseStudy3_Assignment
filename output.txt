@@ -627,3 +627,7 @@ hudson.AbortException: Couldn't find Artifactory server with ID: 1
 2020-12-11 19:25:26.350+0000 [id=433]	INFO	o.j.p.workflow.job.WorkflowRun#finish: DevOps_CaseStudy3_Assignment #5 completed: SUCCESS
 2020-12-11 19:28:47.403+0000 [id=519]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started Periodic background build discarder
 2020-12-11 19:28:47.405+0000 [id=519]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished Periodic background build discarder. 1 ms
+2020-12-11 19:32:22.818+0000 [id=620]	INFO	o.j.h.util.JenkinsBuildInfoLog#info: [consumer_1] Deploying artifact: http://pxmee58901dns.eastus2.cloudapp.azure.com/artifactory/generic-snapshot/petclinic.war
+2020-12-11 19:32:23.762+0000 [id=549]	INFO	o.j.h.util.JenkinsBuildInfoLog#info: Deploying build descriptor to: http://pxmee58901dns.eastus2.cloudapp.azure.com/artifactory/api/build
+2020-12-11 19:32:23.924+0000 [id=549]	INFO	o.j.h.util.JenkinsBuildInfoLog#info: Build successfully deployed. Browse it in Artifactory under http://pxmee58901dns.eastus2.cloudapp.azure.com/artifactory/webapp/builds/petclinic/1
+2020-12-11 19:32:26.377+0000 [id=550]	INFO	o.j.p.workflow.job.WorkflowRun#finish: DevOps_CaseStudy3_Assignment #6 completed: SUCCESS
